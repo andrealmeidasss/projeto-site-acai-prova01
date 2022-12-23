@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Realizar pedido</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+        <header>
+            <div class="cabecalho">
+                <img class="logo-cabecalho" src="img/icon-header.png" alt=""/>
+                <ul class="navbar">
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="precos.html">Produtos</a></li>
+                    <li><a href="apresentacao.html">Colaboradores</a></li>
+                    <li><a href="pedido-direto.html" class="botao">Fazer pedido</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <form action="redirecionamento.html" method="post">
+                <h1>Faça o seu pedido</h1>
+                <img src="img/icon-carrinho.png" alt=""/>
+
+                <div class="info-pessoais">
+                    <h2>Informações Pessoais</h2>
+                    <input type="text" name="nome" id="nome" placeholder="Nome completo"/>
+                    <input type="text" name="cpf" id="cpf" placeholder="CPF"/>
+                    <input type="email" name="email" id="email" placeholder="E-mail"/>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Número de telefone"/>
+                </div>
+
+                <div class="info-endereco">
+                    <h2>Informações da Entrega</h2>
+                    <div>
+                        <input type="checkbox" name="retirada-loja" id="retirada-loja" value="retirada-loja"/>
+                        <label for="retirada-loja">Retirar na Loja</label>
+                    </div>
+
+                    <div class="endereco-entrega">
+                        <h4>Endereço de Entrega</h4>
+                        <input type="text" name="endereco" id="endereco" placeholder="Endereço"/>
+                        <input type="text" name="numero" id="numero" placeholder="Número"/>
+                        <input type="text" name="complemento" id="complemento" placeholder="Complemento"/>
+                        <input type="text" name="cidade" id="complemento" placeholder="Cidade"/>
+                        <input type="text" name="cep" id="complemento" placeholder="CEP"/>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Informações do Pedido</h2>
+                    <h4>Produtos</h4>
+
+                    <div class="pedido-acai">
+                        <div id="acai">
+                            <input type="checkbox" name="acai" id="acai" value="acai"/>
+                            <label for="acai">Açaí</label>
+                        </div>
+                        <div><img src="img/icon-acai.png" alt=""/></div>
+                        <div>
+                            <label for="qtd-acai">Quantidade</label>
+                            <input type="number" name="qtd-acai" id="qtd-acai"/>
+                        </div>
+                        <div>
+                            <label for="tamanho-acai">Tamanho</label>
+                            <select name="tamanho-acai" id="tamanho-acai">
+                                <option value=""></option>
+                                <option value="300ml-acai">300ml</option>
+                                <option value="500ml-acai">500ml</option>
+                                <option value="700ml-acai">700ml</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br/>
+
+                    <div class="pedido-cupuacu">
+                        <div id="cupuacu">
+                            <input type="checkbox" name="pedido" id="cupuacu" value="cupuacu"/>
+                            <label for="cupuacu">Cupuaçu</label>
+                        </div>
+                        <div>
+                            <img src="img/icon-cupuacu.png" alt=""/>
+                        </div>
+                        <div>
+                            <label for="qtd-cupuacu">Quatidade</label>
+                            <input type="number" name="qtd-cupuacu" id="qtd-cupuacu"/>
+                        </div>
+                        <div>
+                            <label for="tamanho-cupuacu">Tamanho</label>
+                            <select name="tamanho-cupuacu" id="tamanho-cupuacu">
+                                <option value=""></option>
+                                <option value="300ml-cupuacu">300ml</option>
+                                <option value="500ml-cupuacu">500ml</option>
+                                <option value="700ml-cupuacu">700ml</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <h4>Acompanhamentos</h4>
+                    <div class="pedido-acomp">
+                        <div>
+                            <input type="checkbox" name="" id="" value="granola"/>
+                            <label for="">Granola</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="" value="amendoim"/>
+                            <label for="">Amendoim</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="" value="aveia-flocos"/>
+                            <label for="">Aveia em Flocos</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="" value="flocos-arroz"/>
+                            <label for="">Flocos de Arroz</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="" value="pacoca"/>
+                            <label for="">Paçoca</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="" value="leite-condensado"/>
+                            <label for="">Leite Condensado</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="" value="leite-po"/>
+                            <label for="">Leite em Pó</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="" value="banana"/>
+                            <label for="">Banana</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="" value="kiwi"/>
+                            <label for="">Kiwi</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="" value="morango"/>
+                            <label for="">Morango</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="" value="castanha"/>
+                            <label for="">Castanha</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="" value="calda-chocolate"/>
+                            <label for="">Calda de Chocolate</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="" value="confetes"/>
+                            <label for="">Confetes</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagamento">
+                    <h2>Informações do Pagamento</h2>
+                    <h4>Método de Pagamento</h4>
+                    <select name="forma-pag" id="forma-pag">
+                        <option value="">Selecionar forma de pagamento</option>
+                        <option value="dinheiro">Dinheiro</option>
+                        <option value="credito">Cartão de Crédito</option>
+                        <option value="debito">Cartão de Débito</option>
+                        <option value="pix">Pix</option>
+                        <option value="transferencia">Transferência Bancária</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="submit" value="Realizar Pedido" class="button"/>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <h3>&copy;AndréAlmeida</h3>
+            <p>2022</p>
+        </footer>
+    </body>
+</html>
